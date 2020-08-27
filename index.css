@@ -1,5 +1,5 @@
-.background {
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(to right, yellow, red);
+.images{
+    width: 1920px;
+    height: 1080px;
+    filter: invert(1);
 }
