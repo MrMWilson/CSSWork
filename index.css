@@ -1,9 +1,5 @@
-.background{
-     height: 100%;
-     width: 100%;
-     background-image: linear-gradient(to right, yellow, red);
-}
-
-body{
-    background-image: linear-gradient(to right, red , yellow);
+.background {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, yellow, red);
 }
