@@ -42,3 +42,26 @@ function newFunc() {
 
     ColorChange(test, number);
 }
+
+function SwitchFunction(value, htmlElement) {
+    switch (value) {
+        case 1:
+            //if value is zero : do dis
+            console.log();
+            value += value;
+            //code stuffs
+            break;
+        case 2:
+            //if value is 1 : do dis
+            break;
+
+        case 3:
+            htmlElement.className = "";
+            htmlElement.classList.add("something");
+            ///....
+            break;
+
+        default:
+            break;
+    }
+}

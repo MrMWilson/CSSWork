@@ -23,3 +23,14 @@ p {
 .low-number {
     color: green;
 }
+
+
+.option-1 {
+    background-color: red;
+    filter: blur(.5);
+}
+
+.option-2 {
+    background-color: blue;
+    filter: invert(.5);
+}
