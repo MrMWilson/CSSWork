@@ -10,8 +10,7 @@ function GetRandomNumber(lowerRange, upperRange) {
 }
 
 function ButtonPress() {
-    var randomNumberText = document.getElementById("random-number-text");
-
+    var pElement = document.getElementById("random-number-text");
     var lowerRangeElement = document.getElementById("lower-range");
     var upperRangeElement = document.getElementById("upper-range");
 
@@ -19,23 +18,27 @@ function ButtonPress() {
     var upperRangeValue = upperRangeElement.value;
 
     var randomNumber = GetRandomNumber(lowerRangeValue, upperRangeValue);
-    
-    ColorChange(randomNumber,randomNumberText);
 
-    randomNumberText.textContent = randomNumber;
+    ColorChange(pElement, randomNumber);
+
+    pElement.textContent = randomNumber;
 }
 
-   //call a function that changes the color of the randomNumberText 
-    //step 1 : create a new function to call (needs a paramater)
-    //step 2: create if - else logic and change the colour depending on the value passed in
-
-    function ColorChange(Number, HTMLElement){
-if (Number > 100) {
-HTMLElement.classList.add("high-number");
-HTMLElement.classList.remove("low-number");
-    
-} else {
-    HTMLElement.classList.remove("high-number");
-    HTMLElement.classList.add("low-number");
-}
+function ColorChange(htmlElement, number) {
+    if (number > 100) {
+        htmlElement.classList.add("high-number");
+        htmlElement.classList.remove("low-number");
+    } else {
+        htmlElement.classList.remove("high-number");
+        htmlElement.classList.add("low-number");
     }
+}
+
+function newFunc() {
+
+    var test = document.getElementById("test");
+
+    var number = 5;
+
+    ColorChange(test, number);
+}
