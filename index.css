@@ -15,3 +15,11 @@ body {
 p {
     min-height: 24px;
 }
+
+.high-number {
+    color: red;
+}
+
+.low-number {
+    color: green;
+}
