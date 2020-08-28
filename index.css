@@ -1,5 +1,13 @@
-.images{
-    width: 1920px;
-    height: 1080px;
-    filter: invert(1);
+.text-container {
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    background-color: whitesmoke;
+    margin: 1rem;
+    font-size: 1rem;
+    border: double 10px black;
+}
+
+body {
+    background-color: antiquewhite;
 }
