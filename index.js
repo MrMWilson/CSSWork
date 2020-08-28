@@ -1,5 +1,15 @@
 window.onload = function () {
     console.log("test");
-    var randomNumber = Math.floor(Math.random() * 4) + 1;
-    console.log(randomNumber);
+    
+}
+
+function GetRandomNumber (lowerRange,upperRange){
+    var randomNumber = Math.floor(Math.random() * upperRange) + lowerRange;
+    return randomNumber;
+}
+
+function ButtonPress (){
+    var randomNumberText = document.getElementById("random-number-text");
+    var randomNumber = GetRandomNumber(1,10);
+    randomNumberText.textContent = randomNumber;
 }
